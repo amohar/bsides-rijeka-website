@@ -1,0 +1,35 @@
+nav:
+  - title: Home
+    url: /preview/home.html
+    visible: true
+  - title: Call for papers
+    url: /preview/cfp.html
+    visible: true
+  - title: Venue
+    url: /preview/venue.html
+    visible: true
+
+  - title: Code of conduct
+    url: /coc.html
+    visible: false
+  - title: Talks
+    url: /talks.html
+    visible: false
+    subnav:
+    - title: Lightning Talks
+      url: /lightningTalks.html
+      visible: false
+  - title: Tickets
+    url: /tickets.html
+    visible: false
+    subnav:
+      - title: Venue
+        url: /venue.html
+        visible: false
+  - title: CTF
+    url: /ctf.html
+    visible: false
+  - title: Sponsors
+    url: /sponsors.html
+    visible: false
+  

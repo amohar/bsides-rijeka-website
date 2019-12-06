@@ -1,0 +1,10 @@
+<ul class="bottom-menu">
+    {% for item in include.nav %}
+        {% if item.visible %}
+            <li class="{% if item.url == page.url %}active{% endif %}">
+                <a href="{{ item.url }}">{{ item.title }}</a>
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>
+

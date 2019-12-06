@@ -1,0 +1,73 @@
+---
+layout: default
+title: Call for Presentations
+---
+
+<div class="cfp quick-info">
+    <h2>Call for papers is {% if site.cfp_is_open %}open!{% else %} currently closed.{% endif %}</h2>
+    <div class="inner-info">
+        <p><i class="quick-info-icon far fa-calendar-alt"></i> <span><strong>Open: </strong>{{site.cfp_open}}</span></p>
+        <p><i class="quick-info-icon far fa-calendar-alt"></i> <span><strong>Deadline: </strong>{{site.cfp_deadline}}</span></p>
+        {% if site.cfp_is_open %}
+        <p><i class="quick-info-icon fas fa-clock"></i> <span><strong>Countdown: </strong><span  id="cfp-countdown"></span></p>
+        <p><i class="quick-info-icon fas fa-clipboard-list"></i> <span><strong><a href="#">Submit a presentation</a></strong></span></p>
+        {% endif %}
+    </div>
+    <p>
+    This conference is intended to be community-based, which means two things when applying for a presentation:
+    </p>
+    <ul>
+        <li>
+            We do not accept the product- or vendor-related pitches. We are a vendor-neutral conference focused on the topics relevant to cybersecurity and information security. By this, we are referring to sales pitches. Companies, vendors, or professionals are more than welcome to come share their experiences, knowledge, and points-of-views.
+        </li>
+        <li>
+            The success of the enite conference is depending on the community, <strong>which means you!</strong> We are looking for <strong>speakers, sponsors, volunteers, and participants</strong> ready to learn and have fun.
+        </li>
+    </ul>
+    <p>
+    We are looking for presentations preferably about relevant and popular topics around infomation or cyber-security. If you are working on a new tool, performing interesting research, or hunting a security bug, we want to hear about it! We are also interested in basic and more general security-related topics, so if you don't have "shiny new research" but want to teach the participants about some well-known techniques that are widely used and useful; let us know and we'll see where to place it!
+    </p>
+    <h2>Topics of interest</h2>
+    <p>
+    Below are some topics to spark your ideas for potential presentations:
+    </p>
+    <div class="grid-x grid-margin-x">
+        <div class="cell small-6">
+            <ul>
+                <li>Network security</li>
+                <li>Application and Web security</li>
+                <li>Bugs and Reverse Engineering (finding and fixing)</li>
+                <li>Malware</li>
+                <li>Mobile security</li>
+                <li>Usable security</li>
+                <li>Virtualisation, Container and Cloud Computing Security</li>
+                <li>Innovative attack / defense strategies</li>
+                <li>Incident Handling, Forensics and Anti-Forensics</li>
+                <li>Embedded device security / IoT</li>
+                <li>Cryptography, Cryptocurrencies, Cryptozoology and other Crypto-fu</li>
+            </ul>
+        </div>
+        <div class="cell small-6">
+            <ul>
+                <li>Critical National Infrastructure (CNI)</li>
+                <li>Cyberspace, Policing, Law, Interception and Human Rights</li>
+                <li>Physical security and lockpicking</li>
+                <li>Human hacking / Social engineering</li>
+                <li>Biometrics</li>
+                <li>Hardware hacking</li>
+                <li>Phreaking</li>
+                <li>Biohacking, Biometrics, and modification</li>
+                <li>Open source software</li>
+                <li>Massive abuse of technology</li>
+                <li>Evolutionary computing</li>
+            </ul>
+        </div>
+    </div>
+    <p>These topics are <strong>in no way limiting or all-encompassing.</strong> If you have a topic that is not listed here but believe that it will be interesting from the information security and cyber-security point of view, send it anyway and it surely will be considered.</p>
+    <p>To submit a presentation, <strong>fill out the google form below.</strong></p>
+    {% if site.cfp_is_open %}
+    <a class="button large expanded" href="#">Submit a presentation</a>
+    {% else %}
+    <p><strong>Note:</strong> CFP is currently closed. Send a note to organizers!</p>
+    {% endif %}
+</div>

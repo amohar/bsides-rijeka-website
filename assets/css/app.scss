@@ -1,0 +1,183 @@
+---
+---
+
+p {
+    display: block;
+}
+
+body {
+    background-color: #31447F;
+}
+
+.body {
+    background-color: white;
+}
+/* Reusable components */
+
+.quick-info {
+    background-color: #E5E6EC;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    color: #3C528B;
+    font-size: 15px;
+    h2 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    h3 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+.inner-info {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.quick-info-icon {
+    color: #3C528B;
+    font-size: 30px;
+    width: 45px;
+}
+
+.top-bar {
+    background: none;
+    padding: 0;
+    ul {
+        background-color: #00000000;
+    }
+}
+
+/* Reusable components - end */
+
+/* Header */
+
+.header {
+    .header-background {
+        background-color: #31447F;
+        height: 120px;
+        @media screen and (max-width: 39.9375em) {
+            height: 60px;
+        }
+    }
+
+    .header-images {
+        display: flex;
+        @media screen and (max-width: 39.9375em) {
+            display: contents;
+        }
+
+        .title-img {
+            height: 50px;
+            margin-top: 60px;
+            margin-left: -6px;
+            @media screen and (max-width: 39.9375em) {
+                margin-top: 5px;
+            }
+
+        }
+
+        .circle-img {
+            height: 100px;
+            margin-top: 15px;
+            margin-right: 10px;
+            border-radius: 50px;
+        }
+    }
+
+    .menu {
+        margin-top: 82px;
+        margin-left: 20px;
+        @media screen and (max-width: 39.9375em) {
+            margin: 0;
+        }
+        .active > a {
+            background-color: white;
+            color: #31447F;
+        }
+
+        li:hover > a {
+            background-color: white;
+            color: #40568D;
+        }
+
+        a,
+        a:hover{
+            color: white;
+        }
+    }
+
+    .top-bar {
+        @media screen and (max-width: 39.9375em) {
+            margin-left: -40px;
+            margin-top: 5px;
+            li {
+                background-color: #31447F;
+            }
+        }
+    }
+
+    .title-bar {
+        height: 60px;
+        background-color: #081C5A;
+    }
+}
+
+/* Header - end */
+
+.footer {
+    background-color: #31447F;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    a {
+        color: white;
+    }
+    .bottom-menu {
+        list-style: none;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .title {
+        font-weight: bold;
+    }
+    .social {
+        width: 25px;
+    }
+}
+
+.home {
+    h3 {
+        margin-top: 20px;
+    }
+}
+
+.venue {
+    .address {
+        list-style: none;
+    }
+}
+
+.map {
+    margin-left: 10px;
+    height: 300px;
+}
+
+.map-large {
+    height: 600px;
+}
+
+i.fa {
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.2em 0.3em;
+    border: 1px solid black;
+    background: white;
+}
+
+.leaflet-popup-content {
+    white-space: pre;
+}

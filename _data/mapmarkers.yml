@@ -1,0 +1,39 @@
+markers:
+  - id: 1
+    icon: user-secret
+    color: "#1E1E1E"
+  - id: 2
+    icon: parking
+    color: "#057AE0"
+  - id: 3
+    icon: bus
+    color: "#542702"
+  - id: 4
+    icon: train
+    color: "#542702"
+
+locations:
+  - lat: 45.32718
+    lng: 14.46791
+    markerId: 1
+    caption: "BSides conference venue"
+  - lat: 45.32800
+    lng: 14.46849
+    markerId: 2
+    caption: "Parking\nCost: <b>free</b>"
+  - lat: 45.32821
+    lng: 14.46506
+    markerId: 2
+    caption: "Parking\nCost: <b>free</b>"
+  - lat: 45.33031
+    lng: 14.46086
+    markerId: 2
+    caption: "Parking\nCost: <b>free</b>"
+  - lat: 45.32745
+    lng: 14.43731
+    markerId: 3
+    caption: "Bus station\n<a href='https://www.buscroatia.com' target='_blank'>Schedule</a>"
+  - lat: 45.32942
+    lng: 14.43031
+    markerId: 4
+    caption: "Train station\n<a href='http://www.hzpp.hr/en' target='_blank'>Schedule</a>"

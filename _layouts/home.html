@@ -1,13 +1,68 @@
 ---
-layout: default
 ---
-<div class="container">
-    <div class="grid-x grid-padding-x align-center-middle text-center">
-        <div class="cell small-10">
-            <img class="comming_soon" src="{{ '/assets/images/banner_comming_soon.jpg' | relative_url }}" />
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {%- seo -%}
+        <link rel="stylesheet" href="{{ '/assets/css/foundation.min.css' | relative_url }}">
+        {%- feed_meta -%}
+        {%- if jekyll.environment == 'production' and site.google_analytics -%}
+            {%- include google-analytics.html -%}
+        {%- endif -%}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+            integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+            crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+            crossorigin=""></script>
+        <style>
+            #mapid { height: 180px; }
+            i.fa {
+                display: inline-block;
+                border-radius: 60px;
+                box-shadow: 0px 0px 2px #888;
+                padding: 0.2em 0.3em;
+                border: 1px solid black;
+                background: white;
+            }
+            .leaflet-popup-content {
+                white-space: pre;
+            }
+            p {
+                display: block;
+            }
+            .comming_soon {
+                width: 50%;
+                height: 50%;
+            }
+            .h3_comming_soon {
+                color: #333;
+            }
+            body
+        </style>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="grid-x grid-padding-x align-center-middle text-center">
+                <div class="cell small-10">
+                    <img class="comming_soon" src="{{ '/assets/images/banner_comming_soon.jpg' | relative_url }}" />
+                </div>
+                <div class="cell small-10">
+                    <h3 class="h3_comming_soon">Coming soon!</h3>
+                </div>
+            </div>
         </div>
-        <div class="cell small-10">
-            <h3 class="h3_comming_soon">Coming soon!</h3>
-        </div>
-    </div>
-</div>
+
+        <script type="text/javascript" src="{{ '/assets/js/vendor/jquery-3.4.1.min.js' | relative_url }}"></script>
+        <script type="text/javascript" src="{{ '/assets/js/vendor/moment.min.js' | relative_url }}"></script>
+        <script type="text/javascript" src="{{ '/assets/js/vendor/what-input.js' | relative_url }}"></script>
+        <script type="text/javascript" src="{{ '/assets/js/vendor/foundation.min.js' | relative_url }}"></script>
+
+        <script type="text/javascript" src="{{ '/assets/js/app.js' | relative_url }}"></script>
+    </body>
+</html>
