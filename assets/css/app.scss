@@ -181,3 +181,26 @@ i.fa {
 .leaflet-popup-content {
     white-space: pre;
 }
+
+#submission-form {
+    height: 4100px;
+    width: 100%;
+}
+
+/* Preventing FOUC */
+/* https://get.foundation/sites/docs/responsive-navigation.html */
+.top-bar {
+    display: none;
+  }
+  
+  @media screen and (min-width: 40em) {
+    .top-bar {
+      display: block;
+    }
+  
+    .title-bar {
+      display: none;
+    }
+  }
+
+/* Preventing FOUC - end */

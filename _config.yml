@@ -35,7 +35,7 @@ when: Friday, May 22 2020.
 at_what_time: 8:00 - 18:00
 cfp_open: Thursday, December 6 2019.
 cfp_deadline: Sunday, March 22 2020.
-cfp_is_closed: false
+cfp_is_open: true
 
 
 # Exclude from processing.
