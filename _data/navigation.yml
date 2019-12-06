@@ -1,12 +1,12 @@
 nav:
   - title: Home
-    url: /preview/home.html
+    url: /
     visible: true
   - title: Call for papers
-    url: /preview/cfp.html
+    url: /cfp.html
     visible: true
   - title: Venue
-    url: /preview/venue.html
+    url: /venue.html
     visible: true
 
   - title: Code of conduct

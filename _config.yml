@@ -33,9 +33,9 @@ where_address: Ul. Radmile Matejčić 10
 where_city: 51000 Rijeka
 when: Friday, May 22 2020.
 at_what_time: 8:00 - 18:00
-cfp_open: Opening soon! # Thursday, December 5 2019.
-cfp_deadline: Will be announced # Sunday, March 22 2020.
-cfp_is_closed: true
+cfp_open: Thursday, December 6 2019.
+cfp_deadline: Sunday, March 22 2020.
+cfp_is_closed: false
 
 
 # Exclude from processing.
