@@ -31,3 +31,11 @@ cfpDeadlineCallback = function() {
 
 var x = setInterval(cfpDeadlineCallback, 1000 * 60);
 cfpDeadlineCallback();
+
+// Email address reveal
+$('.email').click(function(a, b) {
+    address = "uiqtbw:jaqlmazqrmsi@ouiqt.kwu".replace(/[a-zA-Z]/g, function(c) {
+        return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 18) ? c : c - 26);
+    });
+    $(this).attr("href", address);
+});

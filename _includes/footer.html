@@ -1,0 +1,16 @@
+<div class="footer">
+    <div class="grid-x">
+        <div class="cell large-2 large-offset-2 medium-offset-1 small-4 small-offset-1">
+            <span class="title">Menu:</span>
+            {% include nav-bottom.html nav=site.data.navigation.nav %}
+        </div>
+        <div class="cell large-2 small-4">
+            <span class="title">Follow us:</span>
+            <ul class="bottom-menu">
+                <li><a href="https://twitter.com/BSidesRijeka" target="_blank"><i class="social fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="{{ '/feed.xml' | relative_url }}" target="_blank"><i class="social fas fa-rss"></i> RSS</a></li>
+                <li><a href="#" class="email"><i class="social fas fa-at"></i> Email</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

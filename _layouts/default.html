@@ -20,17 +20,7 @@
             crossorigin=""></script>
     </head>
     <body>
-        <div class="grid-x header">
-            <div class="header-background cell large-2 medium-1 small-1">
-            </div>
-            <div class="header-background cell large-10 medium-11 small-11">
-                <div class="header-images clearfix">
-                    <img class="circle-img hide-for-small-only" src="{{ '/assets/images/circle-twitter.png' | absolute_url }}" />
-                    <img class="title-img" src="{{ '/assets/images/title.png' | absolute_url }}" />
-                    {% include nav.html nav=site.data.navigation.nav isRoot=true %}
-                </div>
-            </div>
-        </div>
+        {% include header.html %}
 
         <div class="body">
             <div class="grid-x">
@@ -40,49 +30,8 @@
             </div>
         </div>
 
-        <div class="footer">
-            <div class="grid-x">
-                <div class="cell large-2 large-offset-2 medium-offset-1 small-4 small-offset-1">
-                    <span class="title">Menu:</span>
-                    {% include nav-bottom.html nav=site.data.navigation.nav %}
-                </div>
-                <div class="cell large-2 small-4">
-                    <span class="title">Follow us:</span>
-                    <ul class="bottom-menu">
-                        <li><a href="https://twitter.com/BSidesRijeka" target="_blank"><i class="social fab fa-twitter"></i> Twitter</a></li>
-                        <li><a href="{{ "/feed.xml" | relative_url }}" target="_blank"><i class="social fas fa-rss"></i> RSS</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        {% include footer.html %}
 
-        <script type="text/javascript" src="{{ '/assets/js/vendor/jquery-3.4.1.min.js' | relative_url }}"></script>
-        <script type="text/javascript" src="{{ '/assets/js/vendor/moment.min.js' | relative_url }}"></script>
-        <script type="text/javascript" src="{{ '/assets/js/vendor/what-input.js' | relative_url }}"></script>
-        <script type="text/javascript" src="{{ '/assets/js/vendor/foundation.min.js' | relative_url }}"></script>
-
-        <script type="text/javascript">
-            // Data
-            var markerLocations = 
-            {
-                markers: {{ site.data.mapmarkers.markers | jsonify }},
-                locations: {{ site.data.mapmarkers.locations | jsonify }}
-            };
-
-            var cfpDeadline = moment("{{ site.cfp_deadline }}");
-        </script>
-
-        <script type="text/javascript" src="{{ '/assets/js/app.js' | relative_url }}"></script>
-        <script type="text/javascript" src="{{ '/assets/js/schedule.js' | relative_url }}"></script>
-        <script type="text/javascript" src="{{ '/assets/js/map.js' | relative_url }}"></script>
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154128634-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-154128634-1');
-        </script>
+        {% include javascript.html %}
     </body>
 </html>

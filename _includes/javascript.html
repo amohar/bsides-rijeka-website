@@ -1,0 +1,28 @@
+<script type="text/javascript" src="{{ '/assets/js/vendor/jquery-3.4.1.min.js' | relative_url }}"></script>
+<script type="text/javascript" src="{{ '/assets/js/vendor/moment.min.js' | relative_url }}"></script>
+<script type="text/javascript" src="{{ '/assets/js/vendor/what-input.js' | relative_url }}"></script>
+<script type="text/javascript" src="{{ '/assets/js/vendor/foundation.min.js' | relative_url }}"></script>
+
+<script type="text/javascript">
+    // Data
+    var markerLocations = 
+    {
+        markers: {{ site.data.mapmarkers.markers | jsonify }},
+        locations: {{ site.data.mapmarkers.locations | jsonify }}
+    };
+
+    var cfpDeadline = moment("{{ site.cfp_deadline }}");
+</script>
+
+<script type="text/javascript" src="{{ '/assets/js/app.js' | relative_url }}"></script>
+<script type="text/javascript" src="{{ '/assets/js/schedule.js' | relative_url }}"></script>
+<script type="text/javascript" src="{{ '/assets/js/map.js' | relative_url }}"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154128634-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-154128634-1');
+</script>
