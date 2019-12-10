@@ -1,5 +1,5 @@
 ---
-title:  "Call for papers is now open!"
+title:  "The call for papers is now open!"
 date:   2019-06-12
 ---
 
