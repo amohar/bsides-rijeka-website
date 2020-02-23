@@ -8,6 +8,13 @@ nav:
   - title: Venue
     url: /venue.html
     visible: true
+  - title: Sponsors
+    url: /sponsors.html
+    visible: true
+    subnav:
+    - title: Sponsor Packages
+      url: /sponsor-packages.html
+      visible: false
 
   - title: Code of conduct
     url: /coc.html
@@ -29,7 +36,3 @@ nav:
   - title: CTF
     url: /ctf.html
     visible: false
-  - title: Sponsors
-    url: /sponsors.html
-    visible: false
-  

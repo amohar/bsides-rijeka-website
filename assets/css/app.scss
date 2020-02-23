@@ -160,6 +160,16 @@ body {
     }
 }
 
+.sponsors {
+    h3 {
+        margin-top: 30px;
+    }
+    img {
+        max-width: 450px;
+        margin-bottom: 20px;
+    }
+}
+
 .map {
     margin-left: 10px;
     height: 300px;
@@ -191,16 +201,16 @@ i.fa {
 /* https://get.foundation/sites/docs/responsive-navigation.html */
 .top-bar {
     display: none;
-  }
-  
-  @media screen and (min-width: 40em) {
+}
+
+@media screen and (min-width: 40em) {
     .top-bar {
-      display: block;
+        display: block;
     }
-  
+
     .title-bar {
-      display: none;
+        display: none;
     }
-  }
+}
 
 /* Preventing FOUC - end */
