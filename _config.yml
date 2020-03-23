@@ -36,7 +36,7 @@ at_what_time: 9:00 - 18:00
 cfp_open: Thursday, December 6 2019.
 cfp_deadline: Sunday, March 22 2020.
 cfp_acceptance_notification: Sunday, April 2 2020.
-cfp_is_open: true
+cfp_is_open: false
 
 
 # Exclude from processing.
